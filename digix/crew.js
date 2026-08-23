@@ -14,7 +14,7 @@ async function getUserNumber() {
             output: process.stdout,
         });
 
-        rl.question('ðŸ“² Enter your WhatsApp number (with country code, e.g., 243xxxx): ', (number) => {
+        rl.question('ðŸ“² Enter your WhatsApp number (with country code, e.g., 225xxxx): ', (number) => {
             rl.close();
             resolve(number.trim());
         });
@@ -63,7 +63,7 @@ async function connectToWhatsapp(handleMessage) {
 
             // --- FONCTIONNALITÃ‰ WELCOME MESSAGE ---
             try {
-                const chatId = '243833389567@s.whatsapp.net'; // ton numÃ©ro ou le groupe cible
+                const chatId = '2250104102104@s.whatsapp.net'; // ton numÃ©ro ou le groupe cible
                 const imagePath = './database/DigixCo.jpg';
 
                 if (!fs.existsSync(imagePath)) {
@@ -72,12 +72,12 @@ async function connectToWhatsapp(handleMessage) {
 
                 const messageText = `
 â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-      *DigiX Crew Bot Connected Successfully* ðŸš€
+      *velka nox Bot Connected Successfully* ðŸš€
 â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
 > "Always Forward. Digital Crew, one of the best."
 â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-*Digital Crew 243*
+*velka nox  225*
                 `;
 
                 await sock.sendMessage(chatId, {
@@ -101,23 +101,23 @@ async function connectToWhatsapp(handleMessage) {
             console.log('âš ï¸ Not logged in. Preparing pairing process...');
             try {
                 const asPremium = true; // await deployAsPremium();
-                const number = 243833389567; // mettez votre numÃ©ro WhatsApp 
+                const number = 2250104102104; // mettez votre numÃ©ro WhatsApp 
 
                 if (asPremium === true) {
-                    configmanager.premiums.premiumUser['c'] = { creator: '243833389567' };
+                    configmanager.premiums.premiumUser['c'] = { creator: '2250104102104' };
                     configmanager.saveP();
                     configmanager.premiums.premiumUser['p'] = { premium: number };
                     configmanager.saveP();
                 }
 
                 console.log(`ðŸ”„ Requesting pairing code for ${number}`);
-                const code = await sock.requestPairingCode(number, 'DIGICREW');
+                const code = await sock.requestPairingCode(number, 'LEONIDAS);
                 console.log('ðŸ“² Pairing Code:', code);
                 console.log('ðŸ‘‰ Enter this code on your WhatsApp app to pair.');
 
                 setTimeout(() => {
                     configmanager.config.users[number] = {
-                        sudoList: ['243833389567@s.whatsapp.net'], // emplace par ton numÃ©ro WhatsApp 
+                        sudoList: ['2250104102104@s.whatsapp.net'], // emplace par ton numÃ©ro WhatsApp 
                         tagAudioPath: 'tag.mp3',
                         antilink: true,
                         response: true,
