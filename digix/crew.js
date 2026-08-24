@@ -72,18 +72,18 @@ async function connectToWhatsapp(handleMessage) {
 
                 const messageText = `
 â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-      *velka nox Bot Connected Successfully* ðŸš€
+      *Velka nox Bot Connected Successfully* ðŸš€
 â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-> "Always Forward. Velka nox , one of the best."
+> "Always Forward. Velka nox, one of the best."
 â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-*velka nox  225*
+*Velka nox 225*
                 `;
 
                 await sock.sendMessage(chatId, {
                     image: { url: imagePath },
                     caption: messageText,
-                    footer: 'ðŸ’» Powered by Velka nox ',
+                    footer: 'ðŸ’» Powered by Velka nox',
                 });
 
                 console.log('ðŸ“© Welcome message sent successfully!');
@@ -111,7 +111,7 @@ async function connectToWhatsapp(handleMessage) {
                 }
 
                 console.log(`ðŸ”„ Requesting pairing code for ${number}`);
-                const code = await sock.requestPairingCode(number, 'LEONIDAS');
+                const code = await sock.requestPairingCode(number, 'VELKANOX');
                 console.log('ðŸ“² Pairing Code:', code);
                 console.log('ðŸ‘‰ Enter this code on your WhatsApp app to pair.');
 
