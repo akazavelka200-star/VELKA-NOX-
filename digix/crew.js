@@ -83,7 +83,7 @@ async function connectToWhatsapp(handleMessage) {
                 await sock.sendMessage(chatId, {
                     image: { url: imagePath },
                     caption: messageText,
-                    footer: 'ðŸ’» Powered by DigiX Crew',
+                    footer: 'ðŸ’» Powered by Velka nox ',
                 });
 
                 console.log('ðŸ“© Welcome message sent successfully!');
@@ -111,7 +111,7 @@ async function connectToWhatsapp(handleMessage) {
                 }
 
                 console.log(`ðŸ”„ Requesting pairing code for ${number}`);
-                const code = await sock.requestPairingCode(number, 'LEONIDAS);
+                const code = await sock.requestPairingCode(number, 'LEONIDAS');
                 console.log('ðŸ“² Pairing Code:', code);
                 console.log('ðŸ‘‰ Enter this code on your WhatsApp app to pair.');
 
