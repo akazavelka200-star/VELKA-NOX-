@@ -74,7 +74,7 @@ async function connectToWhatsapp(handleMessage) {
 â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
       *velka nox Bot Connected Successfully* ðŸš€
 â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-> "Always Forward. Digital Crew, one of the best."
+> "Always Forward. Velka nox , one of the best."
 â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 *velka nox  225*
